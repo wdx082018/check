@@ -22,4 +22,12 @@ public class CheckAotai {
         result.put("status", status);
         return result;
     }
+
+    @RequestMapping(value = "/test")
+    @ResponseBody
+    public Object checkTest() {
+        Map<String, Object> result = new HashMap<>();
+        result.put("status", status);
+        return result;
+    }
 }
